@@ -1,3 +1,8 @@
+# ABOUT THE PROJECT
+
+- What is Monster Catalog App?
+  - It is a React app which shows bunch of user profiles (catalog) of monsters!!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

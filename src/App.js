@@ -1,6 +1,5 @@
 import { Component } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -8,27 +7,37 @@ class App extends Component {
     super();
 
     this.state = {
-      name: { firstName: 'Gaurav', lastName: 'Garje' },
-      company: 'Morgan Stanley',
-    }
+      monsters: [
+        { name: 'Ravana', id: 1 },
+        { name: 'Kumbhakarna', id: 2 },
+        { name: 'Indrajit', id: 3 },
+        { name: 'Tataka', id: 4 },
+        { name: 'Maricha', id: 5 },
+        { name: 'Vibhishana', id: 6 },
+        { name: 'Hiranyakashipu', id: 7 },
+        { name: 'Hiranyaksha', id: 8 },
+        { name: 'Mahishasura', id: 9 },
+        { name: 'Andhaka', id: 10 },
+        // { name: 'Bakasura' },
+        // { name: 'Aghasura' },
+        // { name: 'Narkasura' },
+        // { name: 'Bhasmasura' },
+        // { name: 'Vasuki' },
+        // { name: 'Kaliya' },
+        // { name: 'Bali' },
+        // { name: 'Jambavan' },
+        // { name: 'Raktabija' },
+        // { name: 'Surapadman' },
+      ]
+    };
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hi {this.state.name.firstName} {this.state.name.lastName}, You work at {this.state.company}...
-          </p>
-          <button onClick={() => {
-            this.setState(() => { // updater function
-              return { name: { firstName: 'Vaibhav', lastName: 'Garje' }, company: 'Data Axle' };
-            }, () => { // callback function
-              console.log(this.state);
-            });
-          }}>Change Name</button>
-        </header>
+        {
+          this.state.monsters.map((monster) => { return <div key={monster.id}><h1>{monster.name}</h1></div>; })
+        }
       </div>
     );
   }
