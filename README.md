@@ -3,7 +3,6 @@
 - What is Robo Monster Catalog App?
   - It is a React app which shows bunch of user profiles (catalog) of monsters from Indian mythology!!
   - Pictures are used from robohash website which generates random pictures from a given set. [Robohash](https://robohash.org/)
-- 
 
 # Getting Started with Create React App
 
